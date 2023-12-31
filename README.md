@@ -1,5 +1,5 @@
 # ReactKeep
-ReactKeep is a simple note-taking application built with React.
+ReactKeep is a simple note-taking Google-keep clone application built with React.
 
 ### Features
 Create and save notes with a title and content.
