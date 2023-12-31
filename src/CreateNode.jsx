@@ -27,7 +27,7 @@ const CreateNode =(props)=>{
     }
     return(
         <>
-            <div className="main_note">
+            <div className="main_note" onDoubleClick={()=>{setShow(false)}}>
                 <form>
                     <input type='text' name="title" placeholder={title} onClick={()=>{setShow(true); setTitle("Title");}} onChange={InputEvent} value={note.title}/>
                     {show && <div className="note_body">
