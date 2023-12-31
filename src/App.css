@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+/* Your CSS file or style block */
+*{
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  background-color: #f8f9fa; /* Light background color */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  background-color: #df5555; /* Set your desired background color */
+  padding: 5px;
+  margin: 0;
+  height: 50px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1{
   color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* .main_note{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+} */
+form{
+  width: 40vw;
 }
 
-.App-link {
-  color: #61dafb;
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style the textarea for the note */
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  margin-top: 0;
+  height: 120px;
+  box-shadow: 0  2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add a hover effect for better user interaction */
+input[type='text']:hover,
+textarea:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.saveButton {
+  background-color: #df5555; 
+  color: #ffffff; /* White text color */
+  padding: 10px 18px; /* Adjust padding as needed */
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.1); /* Green shadow */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-left: 88%; /* Align to the right */
+}
+
+.saveButton:hover {
+  background-color: #b74444; /* Darker green on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.main_note{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+/* Note.css */
+.note{
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 20px;
+  float: left;
+}
+
+.note h1{
+  padding: 10px;
+  font-size: 1.1em;
+  color: black;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note .btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #df5555;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.note .btn:hover {
+  background-color: #df5555;
+}
+
+.note .btn:hover .deleteIcon {
+  color: #fff;
 }
